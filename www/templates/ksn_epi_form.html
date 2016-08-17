@@ -1,0 +1,22 @@
+<ion-view>
+
+  <ion-nav-bar>
+    <ion-nav-title>
+      กรุณาใส่หมายเลขบัตรประชาชน
+    </ion-nav-title>
+  </ion-nav-bar>
+
+  <ion-content ng-controller="ksnEpiController">
+      <div class="list list-inset">
+<div class="item item-input-inset">
+    <label class="item-input-wrapper">
+      <input type="text" placeholder="หมายเลขบัตรประชาชน" ng-model="form.txt_cid">
+    </label>
+    <button class="button button-small" ng-click="btnFind()">
+      Submit
+    </button>
+  </div>
+      </div>
+
+  </ion-content>
+</ion-view>

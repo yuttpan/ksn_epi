@@ -1,0 +1,28 @@
+<ion-view>
+
+   <ion-nav-bar class=" bar bar-positive" >
+    <ion-nav-title>
+       {{personname}} 
+    </ion-nav-title>
+    <ion-nav-buttons side="left" >
+        <a class="button" href="#/ksn_epi_form"> BACK</a> </ion-nav-buttons>
+  </ion-nav-bar>
+
+
+  <ion-content ng-controller="ksnEpiResult"> 
+
+    <div class="list list-inset">
+        
+      <div class="item "  ng-repeat="data in data">
+
+        
+        <p>{{data.vaccine_name}}</p>
+        <p>{{data.vaccine_date}}</p>
+    
+
+      </div>
+    </div>
+
+  </ion-content>
+
+</ion-view>

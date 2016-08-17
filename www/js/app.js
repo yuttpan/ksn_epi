@@ -32,6 +32,16 @@ angular.module('starter', ['ionic'])
       templateUrl:'templates/main.html',
       controller:'mainController'
     })
+     .state('ksn_epi',{
+      url:'/ksn_epi/:cid',
+      templateUrl:'templates/ksn_epi.html',
+      controller:'ksnEpiResult'
+    })
+         .state('ksn_epi_form',{
+      url:'/ksn_epi_form',
+      templateUrl:'templates/ksn_epi_form.html',
+      controller:'ksnEpiController'
+    })
 
       $urlRouterProvider.otherwise('/main')
 
