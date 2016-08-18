@@ -28,7 +28,7 @@ var var_cid = $stateParams.cid ;
     $scope.data = result;
 $scope.personname= $scope.data[0].name ;
 
-
+console.log($scope.data);
     });
 });
 
